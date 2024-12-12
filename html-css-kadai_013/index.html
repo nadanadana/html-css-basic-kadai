@@ -1,50 +1,71 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Organic Cafe</title>
-    <meta charset="UTF-8" />
-    <meta name="description" content="自家焙煎のコーヒーがお家で楽しめるOrganic Cafe"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- ヘッダー -->
-    <header>
-      <!-- ロゴ -->
-      <a href="index.html" id="logo"><img src="images/logo.png" alt="トップページに戻る"/></a>
+<html lang="ja"> <!-- 言語属性を追加しました -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="自家焙煎のコーヒーがお家で楽しめるOrganic Cafe"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organic Cafe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <!-- PC用ナビゲーション -->
-      <nav id="nav-pc">
-        <a href="index.html#concept">CONCEPT</a>
-        <a href="index.html#product">PRODUCT</a>
-        <a href="index.html#contact">CONTACT</a>
+  <!-- ヘッダー -->
+  <header>
+    <!-- ロゴ -->
+    <a href="index.html" id="logo">
+      <img src="images/logo.png" alt="トップページに戻る"/>
+    </a>
+
+    <!-- PC用ナビゲーション -->
+    <nav id="nav-pc">
+      <a href="index.html#concept">CONCEPT</a>
+      <a href="index.html#product">PRODUCT</a>
+      <a href="index.html#contact">CONTACT</a>
+    </nav>
+
+    <!--スマートフォン用ナビゲーション-->
+    <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+      <img src="images/button-menu.png" alt="ナビゲーションを開く">
+    </button>
+
+    <div id="nav-sp">
+      <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+        <img src="images/button-close.png" alt="ナビゲーションを閉じる">
+      </button>
+
+      <nav>
+        <ul>
+          <li>
+            <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'">
+              <img src="images/logo-sp.png" alt="トップページに戻る">
+            </a>
+          </li>
+          <li>
+            <a class="menu" href="concept.html" onclick="document.getElementById('nav-sp').style.display = 'none'">CONCEPT</a>
+          </li>
+          <li>
+            <a class="menu" href="product.html" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a>
+          </li>
+          <li>  
+            <a class="menu" href="contact.html" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a> 
+          </li>
+        </ul>
       </nav>
-        <!-- スマートフォン向けハンバーガーメニュー画像 -->
-        <img id="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く" 
-        onclick="document.getElementById('nav-sp').style.display = 'block'" />
+    </div>
+  </header>
 
-<!-- スマートフォン用ナビゲーションメニュー -->
-<div id="nav-sp" style="display: none;">
-<!-- メニュー項目をここに追加 -->
-<ul>
-   <li><a href="#">ホーム</a></li>
-   <li><a href="#">サービス</a></li>
-   <li><a href="#">お問い合わせ</a></li>
-</ul>
-</div>
-    </header>
+  <main>
+    <article>
+      <!-- メインビジュアル -->
+      <section id="main-visual">
+        <div id="main-message">
+          <h1>Organic Cafe</h1>
+          <p>自家焙煎コーヒーが買えるお店</p>
+        </div>
+        <img src="images/main-image.jpg" alt="コーヒーをハンドドリップで淹れる画像"/>
+      </section>
+    </article>
+  </main>
 
-    <main>
-      <article>
-        <!-- メインビジュアル -->
-        <section id="main-visual">
-          <div id="main-message">
-            <h1>Organic Cafe</h1>
-            <p>自家焙煎コーヒーが買えるお店</p>
-          </div>
-          <img src="images/main-image.jpg" alt="コーヒーをハンドドリップで淹れる画像"/>
-        </section>
-      </article>
-    </main>
-  </body>
+</body>
 </html>
