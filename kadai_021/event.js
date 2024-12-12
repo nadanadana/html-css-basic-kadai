@@ -4,6 +4,6 @@ const text = document.getElementById('text');
 btn.addEventListener('click', () => {
   // クリックされてから2秒後に実行される
   setTimeout(() => {
-    text.textContent = 'クリックしました！';
+    text.textContent = 'ボタンをクリックしました';
   }, 2000);
 });
