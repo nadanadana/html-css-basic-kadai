@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Organic Cafe</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="自家焙煎のコーヒーがお家で楽しめるOrganic Cafe"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <!-- ロゴ -->
+      <a href="index.html" id="logo"><img src="images/logo.png" alt="トップページに戻る"/></a>
+
+      <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <a href="index.html#concept">CONCEPT</a>
+        <a href="index.html#product">PRODUCT</a>
+        <a href="index.html#contact">CONTACT</a>
+      </nav>
+        <!-- スマートフォン向けハンバーガーメニュー画像 -->
+        <img id="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く" 
+        onclick="document.getElementById('nav-sp').style.display = 'block'" />
+
+<!-- スマートフォン用ナビゲーションメニュー -->
+<div id="nav-sp" style="display: none;">
+<!-- メニュー項目をここに追加 -->
+<ul>
+   <li><a href="#">ホーム</a></li>
+   <li><a href="#">サービス</a></li>
+   <li><a href="#">お問い合わせ</a></li>
+</ul>
+</div>
+    </header>
+
+    <main>
+      <article>
+        <!-- メインビジュアル -->
+        <section id="main-visual">
+          <div id="main-message">
+            <h1>Organic Cafe</h1>
+            <p>自家焙煎コーヒーが買えるお店</p>
+          </div>
+          <img src="images/main-image.jpg" alt="コーヒーをハンドドリップで淹れる画像"/>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
